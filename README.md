@@ -12,3 +12,15 @@ Below is a coffee shop template that allows users to make bookings of tables ava
 2. Import the contact_db.sql file to your created database 
 
 3. Make bookings and it works
+
+# Screenshots
+
+![alt text](https://github.com/brianondemand/coffee-shop/blob/main/artcaffe/images/ScreenShot/part2.png)
+
+![alt text](https://github.com/brianondemand/coffee-shop/blob/main/artcaffe/images/ScreenShot/part3.png)
+
+![alt text](https://github.com/brianondemand/coffee-shop/blob/main/artcaffe/images/ScreenShot/part4.png)
+
+![alt text](https://github.com/brianondemand/coffee-shop/blob/main/artcaffe/images/ScreenShot/part5.png)
+
+![alt text](https://github.com/brianondemand/coffee-shop/blob/main/artcaffe/images/ScreenShot/part6.png)
