@@ -7,11 +7,13 @@ Below is a coffee shop template that allows users to make bookings of tables ava
 
 # How to connect to database
 
-1. Create a new database called koffe_shop
+1. Install the XAMPP application to start a server if you dont have any
 
-2. Import the contact_db.sql file to your created database 
+2. Create a new database called koffe_shop
 
-3. Make bookings and it works
+3. Import the contact_db.sql file to your created database 
+
+4. Make bookings and it works !!
 
 # Screenshots
 
