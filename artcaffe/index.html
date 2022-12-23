@@ -1,12 +1,19 @@
+<?php
+// Conect to database
+require('includes/connect.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Complete Responsive Coffee Shop Website Design</title>
+   <title>ArtCaffé</title>
 
    <!-- font awesome cdn link  -->
+   <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
@@ -14,14 +21,29 @@
 
 </head>
 <body>
-   
+
+<?php
+
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+
+?>
+
 <!-- header section starts  -->
 
 <header class="header">
 
    <section class="flex">
 
-      <a href="#home" class="logo"><img src="images/logo.png" alt=""></a>
+      <a href="#home" class="logo"><img src="images/cafee.webp" alt=""></a>
 
       <nav class="navbar">
          <a href="#home">home</a>
@@ -47,8 +69,8 @@
    <section class="home" id="home">
 
       <div class="content">
-         <h3>coffee heaven</h3>
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut officia, accusantium mollitia laudantium dolorum dolore.</p>
+         <h3>ArtCaffé</h3>
+         <p>Want to experience the best coffee you’ve ever tasted? Come join us at <strong>ArtCaffé</strong> sparkling conversation, a warm and welcoming atmosphere, and of course coffee beyond all imagining.</p>
          <a href="#about" class="btn">about us</a>
       </div>
 
@@ -67,8 +89,8 @@
    </div>
 
    <div class="content">
-      <h3>A cup of coffee can complete your day</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit sunt repellendus, dolorum recusandae placeat quae. Iste eaque aspernatur, animi deleniti voluptas, sunt molestias eveniet sint consectetur facere a ex.</p>
+      <h3>A cup of cofee can complete your day</h3>
+      <p>We are coffee punks who don’t exaggerate about their Americanos. Time, temperature, and technique need to be on point to make the best cup of coffee, but it’s all for nothing without quality beans roasted to perfection.</p>
       <a href="#menu" class="btn">our menu</a>
    </div>
 
@@ -90,25 +112,25 @@
       <div class="box">
          <img src="images/icon-1.png" alt="">
          <h3>varieties of coffees</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci!</p>
+         <p>Latte, Americano, Frappuccino, Black Coffee, Affogato.. it’s crazy all that you can do with a few small beans.</p>
       </div>
 
       <div class="box">
          <img src="images/icon-2.png" alt="">
          <h3>coffee beans</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci!</p>
+         <p>Powerful evocative smell that enhances a great cup of coffee.</p>
       </div>
 
       <div class="box">
          <img src="images/icon-3.png" alt="">
          <h3>breakfast and sweets</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci!</p>
+         <p>It gives you an instant as well a slow release of glucose, which in turn, keeps your body active throughout the length of the day.</p>
       </div>
 
       <div class="box">
          <img src="images/icon-4.png" alt="">
          <h3>read to go coffee</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci!</p>
+         <p>A chilled coffee that comes pre-made in a can or bottle</p>
       </div>
 
    </div>
@@ -129,32 +151,32 @@
    <div class="box-container">
 
       <div class="box">
-         <img src="images/menu-1.png" alt="">
+         <img src="images/menu/menu-1.png" alt="">
          <h3>love you coffee</h3>
       </div>
 
       <div class="box">
-         <img src="images/menu-2.png" alt="">
+         <img src="images/menu/menu-2.png" alt="">
          <h3>Cappuccino</h3>
       </div>
 
       <div class="box">
-         <img src="images/menu-3.png" alt="">
+         <img src="images/menu/menu-3.png" alt="">
          <h3>Mocha coffee</h3>
       </div>
 
       <div class="box">
-         <img src="images/menu-4.png" alt="">
+         <img src="images/menu/menu-4.png" alt="">
          <h3>Frappuccino</h3>
       </div>
 
       <div class="box">
-         <img src="images/menu-5.png" alt="">
+         <img src="images/menu/menu-5.png" alt="">
          <h3>black coffee</h3>
       </div>
 
       <div class="box">
-         <img src="images/menu-6.png" alt="">
+         <img src="images/menu/menu-6.png" alt="">
          <h3>love heart coffee</h3>
       </div>
 
@@ -174,12 +196,12 @@
    </div>
 
    <div class="box-container">
-      <img src="images/gallery-1.webp" alt="">
-      <img src="images/gallery-2.webp" alt="">
-      <img src="images/gallery-3.webp" alt="">
-      <img src="images/gallery-4.webp" alt="">
-      <img src="images/gallery-5.webp" alt="">
-      <img src="images/gallery-6.webp" alt="">
+      <img src="images/gallery/image-1.jpg" alt="">
+      <img src="images/gallery/image-2.jpg" alt="">
+      <img src="images/gallery/image-3.jpg" alt="">
+      <img src="images/gallery/image-4.jpg" alt="">
+      <img src="images/gallery/image-5.jpg" alt="">
+      <img src="images/gallery/image-6.jpg" alt="">
    </div>
 
 </section>
@@ -198,28 +220,28 @@
    <div class="box-container">
 
       <div class="box">
-         <img src="images/our-team-1.jpg" alt="">
-         <h3>john deo</h3>
+         <img src="images/team/our-team-1.jpg" alt="">
+         <h3>Constance Mann</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-2.jpg" alt="">
-         <h3>john deo</h3>
+         <img src="images/team/our-team-2.jpg" alt="">
+         <h3>Saad Villegas</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-3.jpg" alt="">
-         <h3>john deo</h3>
+         <img src="images/team/our-team-3.jpg" alt="">
+         <h3>Haleema Page</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-4.jpg" alt="">
-         <h3>john deo</h3>
+         <img src="images/team/our-team-4.jpg" alt="">
+         <h3>Ned Dunlap</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-5.jpg" alt="">
-         <h3>john deo</h3>
+         <img src="images/team/our-team-5.jpg" alt="">
+         <h3>Kate Roman</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-6.jpg" alt="">
-         <h3>john deo</h3>
+         <img src="images/team/our-team-6.jpg" alt="">
+         <h3>Omer Johns</h3>
       </div>
 
    </div>
@@ -266,20 +288,20 @@
       <div class="box">
          <i class="fas fa-envelope"></i>
          <h3>our email</h3>
-         <p>shaikhanas@gmail.com</p>
-         <p>anasbhai@gmail.com</p>
+         <p>artcaffe@gmail.com</p>
+         <p>customercare@artcaffe.com</p>
       </div>
 
       <div class="box">
          <i class="fas fa-clock"></i>
-         <h3>opening hours</h3>
+         <h3>Fresh and fast from</h3>
          <p>07:00am to 09:00pm</p>
       </div>
 
       <div class="box">
          <i class="fas fa-map-marker-alt"></i>
          <h3>shop location</h3>
-         <p>mumbai, india - 400104</p>
+         <p>Parklands, Nairobi.</p>
       </div>
 
       <div class="box">
@@ -291,33 +313,11 @@
 
    </div>
 
-   <div class="credit"> &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved! </div>
+   <div class="credit"> &copy; copyright @ <?= date('Y'); ?> by <span>brian.on.demand</span> | all rights reserved! </div>
 
 </section>
 
 <!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>

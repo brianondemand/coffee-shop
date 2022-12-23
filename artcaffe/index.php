@@ -220,27 +220,27 @@ if(isset($message)){
    <div class="box-container">
 
       <div class="box">
-         <img src="images/our-team-1.jpg" alt="">
+         <img src="images/team/our-team-1.jpg" alt="">
          <h3>Constance Mann</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-2.jpg" alt="">
+         <img src="images/team/our-team-2.jpg" alt="">
          <h3>Saad Villegas</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-3.jpg" alt="">
+         <img src="images/team/our-team-3.jpg" alt="">
          <h3>Haleema Page</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-4.jpg" alt="">
+         <img src="images/team/our-team-4.jpg" alt="">
          <h3>Ned Dunlap</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-5.jpg" alt="">
+         <img src="images/team/our-team-5.jpg" alt="">
          <h3>Kate Roman</h3>
       </div>
       <div class="box">
-         <img src="images/our-team-6.jpg" alt="">
+         <img src="images/team/our-team-6.jpg" alt="">
          <h3>Omer Johns</h3>
       </div>
 
@@ -318,28 +318,6 @@ if(isset($message)){
 </section>
 
 <!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
